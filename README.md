@@ -20,8 +20,8 @@ Usage
 
 Invoke csv2json.sh from the command
 
-  ./csv2json.sh < file.csv > file.json
+    ./csv2json.sh < file.csv > file.json
  
 Invoke csv2xml.sh from the command
 
-  ./csv2xml.sh < file.csv > file.xml
+    ./csv2xml.sh < file.csv > file.xml
