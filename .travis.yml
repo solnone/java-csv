@@ -1,10 +1,4 @@
 language: java
-
-deploy:
-  provider: releases
-  api-key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
-  skip_cleanup: true
-  on:
-    tags: true
-    all_branches: true
+env:
+  global:
+    secure: bqopRR9GvvRiCzq5BjVIxD0kWa0uzAcBx8oBymSpHfnRKbalPFTkTI0h89aDgVkST24grAMlG+URihQv+lC/F3wrL84TsDSlAZ0Pb3J8HiNKvwBMHTToaU9b1bCwhUzdW8Sr5FgIBD+boS/Y7Wzfn2ZcFNaylDw2ZV+wKXKeQO0=
