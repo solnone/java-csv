@@ -9,8 +9,8 @@ Download and build
 You need Java, git and maven.
 
 ```bash
-$ git clone git://github.com/solnone/java-csv.git
-$ cd java-csv
-$ mvn compile
-$ mvn dependency:build-classpath -Dmdep.outputFile=target/classpath.txt
+git clone git://github.com/solnone/java-csv.git
+cd java-csv
+mvn compile
+mvn dependency:build-classpath -Dmdep.outputFile=target/classpath.txt
 ```
