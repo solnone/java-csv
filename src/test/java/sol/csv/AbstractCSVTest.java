@@ -1,0 +1,59 @@
+package sol.csv;
+
+import static org.junit.Assert.assertArrayEquals;
+
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class AbstractCSVTest {
+
+	private AbstractCSV csv;
+
+	@Before
+	public void setUp() throws Exception {
+		csv = new AbstractCSV() {
+
+			@Override
+			void transform(InputStreamReader in, OutputStream out) throws IOException {
+				
+			}
+			
+		};
+	}
+
+	@Test
+	public void testParseLine() {
+		String[] expected = {"","a,b", "c\"", "c\"x", "a,b", ""};
+		String[] actual = csv.parseLine(",\"a,b\",c\",c\"x,\"a,b\",");
+		assertArrayEquals(expected, actual);
+	}
+
+	@Test
+	public void testRead() throws IOException {
+		StringBuilder sb = new StringBuilder("a,b,c").append("\r\n");
+		sb.append("d, ,f").append("\r\n");
+		StringReader reader = new StringReader(sb.toString());
+
+		List<String[]> expecteds = new ArrayList<String[]>();
+		expecteds.add(new String[]{"a", "b", "c"});
+		expecteds.add(new String[]{"d", "", "f"});
+		List<String[]> actuals = csv.readAll(reader);
+		Iterator<String[]> iterator = actuals.iterator();
+
+		for (String[] expected : expecteds) {
+			if (iterator.hasNext()) {
+				String[] actual = iterator.next();
+				assertArrayEquals(expected, actual);
+			}
+		}
+	}
+
+}
