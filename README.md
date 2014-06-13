@@ -1,7 +1,7 @@
 java-csv
 ========
 
-Java-based transform <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> data into JSON / XML
+Java-based transform <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> data into JSON / <a href="http://www.w3.org/standards/xml">XML</a>
 
 Download and build
 ------------------
