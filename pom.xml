@@ -3,7 +3,7 @@
 
 	<groupId>sol</groupId>
 	<artifactId>csv</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.3</version>
 	<packaging>jar</packaging>
 
 	<name>csv</name>
@@ -12,7 +12,7 @@
 		<connection>scm:git:git@github.com:solnone/java-csv.git</connection>
 		<url>scm:git:git@github.com:solnone/java-csv.git</url>
 		<developerConnection>scm:git:git@github.com:solnone/java-csv.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>csv-0.0.3</tag>
 	</scm>
 
 	<properties>
