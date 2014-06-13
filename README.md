@@ -6,7 +6,7 @@ Java-based transform <a href="http://en.wikipedia.org/wiki/Comma-separated_value
 Download and build
 ------------------
 
-You need Java, git and maven.
+You need Java, <a href="http://git-scm.com">git</a> and <a href="http://git-scm.com">maven</a>.
 
 ```bash
 git clone git://github.com/solnone/java-csv.git
