@@ -1,6 +1,8 @@
 java-csv
 ========
 
+[![Build Status](https://travis-ci.org/solnone/java-csv.svg?branch=master)](https://travis-ci.org/solnone/java-csv)
+
 Java-based transform <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> data into <a href="http://www.json.org">JSON</a> / <a href="http://www.w3.org/standards/xml">XML</a>
 
 Dependencies
