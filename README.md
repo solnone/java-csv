@@ -3,6 +3,30 @@ java-csv
 
 Java-based transform <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> data into <a href="http://www.json.org">JSON</a> / <a href="http://www.w3.org/standards/xml">XML</a>
 
+Dependencies
+------------
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>2.6</version>
+    </dependency>
+    <dependency>
+        <groupId>org.glassfish</groupId>
+        <artifactId>javax.json</artifactId>
+        <version>1.0.4</version>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+```
+
 Download and build
 ------------------
 
