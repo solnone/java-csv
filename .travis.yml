@@ -1,4 +1,5 @@
 language: java
+install: true
 env:
   global:
     secure: bqopRR9GvvRiCzq5BjVIxD0kWa0uzAcBx8oBymSpHfnRKbalPFTkTI0h89aDgVkST24grAMlG+URihQv+lC/F3wrL84TsDSlAZ0Pb3J8HiNKvwBMHTToaU9b1bCwhUzdW8Sr5FgIBD+boS/Y7Wzfn2ZcFNaylDw2ZV+wKXKeQO0=
