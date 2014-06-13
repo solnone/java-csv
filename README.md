@@ -4,7 +4,7 @@ java-csv
 Java-based transform <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> data into JSON / XML
 
 Download and build
-==================
+------------------
 
 You need Java, git and maven.
 
@@ -14,3 +14,12 @@ cd java-csv
 mvn compile
 mvn dependency:build-classpath -Dmdep.outputFile=target/classpath.txt
 ```
+
+Usage
+-----
+
+Invoke csv2json.sh from the command
+ ./csv2json.sh < file.csv > file.json
+ 
+Invoke csv2xml.sh from the command
+ ./csv2xml.sh < file.csv > file.xml
