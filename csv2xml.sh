@@ -2,7 +2,7 @@
 
 cd $(dirname $0)
 if [ ! -f target/classpath.txt ]; then
-  mvn dependency:build-classpath -Dmdep.outputFile=target/classpath.txt
+  mvn dependency:build-classpath -Dmdep.outputFile=target/classpath.txt > /dev/null
 fi
 
 CP="target/classes:$(cat target/classpath.txt)"
