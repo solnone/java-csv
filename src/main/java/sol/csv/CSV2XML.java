@@ -41,7 +41,6 @@ public class CSV2XML extends AbstractCSV {
 				final Element e = doc.createElement(header[i].trim());
 				e.setTextContent(row[i]);
 				rowElement.appendChild(e);
-
 			}
 		}
 

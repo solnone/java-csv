@@ -12,7 +12,12 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+import com.google.code.tempusfugit.concurrency.IntermittentTestRunner;
+import com.google.code.tempusfugit.concurrency.annotations.Intermittent;
+
+@RunWith(IntermittentTestRunner.class)
 public class AbstractCSVTest {
 
 	private AbstractCSV csv;
@@ -23,13 +28,14 @@ public class AbstractCSVTest {
 
 			@Override
 			void transform(InputStreamReader in, OutputStream out) throws IOException {
-				
+
 			}
-			
+
 		};
 	}
 
 	@Test
+	@Intermittent(repetition = 1)
 	public void testParseLine() {
 		String[] expected = {"","a,b", "c\"", "c\"x", "a,b", ""};
 		String[] actual = csv.parseLine(",\"a,b\",c\",c\"x,\"a,b\",");
@@ -37,6 +43,7 @@ public class AbstractCSVTest {
 	}
 
 	@Test
+	@Intermittent(repetition = 1)
 	public void testRead() throws IOException {
 		StringBuilder sb = new StringBuilder("a,b,c").append("\r\n");
 		sb.append("d, ,f").append("\r\n");
