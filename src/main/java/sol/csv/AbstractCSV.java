@@ -9,11 +9,11 @@ import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.lang.text.StrTokenizer;
+import org.apache.commons.text.StringTokenizer;
 
 public abstract class AbstractCSV {
 
-	private final StrTokenizer token = StrTokenizer.getCSVInstance();
+	private final StringTokenizer token = StringTokenizer.getCSVInstance();
 
 	public String[] parseLine(String line) {
 		token.reset(line);
