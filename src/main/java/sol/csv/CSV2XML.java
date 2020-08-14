@@ -43,7 +43,7 @@ public class CSV2XML extends AbstractCSV {
 
       String[] row = rows.get(j);
       for (int i = 0; i < row.length; i++) {
-        final Element e = doc.createElement(header[i].trim());
+        final Element e = doc.createElement(header[i].trim().replaceAll(" ", "_"));
         e.setTextContent(row[i]);
         rowElement.appendChild(e);
       }
