@@ -26,23 +26,25 @@ Download and build
 
 You need [Java](https://www.java.com), [git](https://git-scm.com) and [maven](https://maven.apache.org).
 
-```bash
-git clone git://github.com/solnone/java-csv.git
-cd java-csv
-mvn compile
-mvn dependency:build-classpath -Dmdep.outputFile=target/classpath.txt
-mvn site:site
+```shell
+$ git clone git://github.com/solnone/java-csv.git
+$ cd java-csv
+$ mvn compile
+$ mvn dependency:build-classpath -Dmdep.outputFile=target/classpath.txt
+$ mvn site:site
 ```
 
 Usage
 -----
 
 Invoke csv2json.sh from the command
-```bash
-    ./csv2json.sh < file.csv > file.json
+
+```shell
+$ ./csv2json.sh < file.csv > file.json
 ```
 
 Invoke csv2xml.sh from the command
-```bash
-    ./csv2xml.sh < file.csv > file.xml
+
+```shell
+$ ./csv2xml.sh < file.csv > file.xml
 ```
